@@ -20,3 +20,6 @@ code {
 ::-webkit-scrollbar {
   display: none;
 }
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}

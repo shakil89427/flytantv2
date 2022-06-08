@@ -1,18 +1,10 @@
 import React, { useState } from "react";
 
-const MainDrawer = () => {
-  const options = [
-    "Home",
-    "Chat",
-    "Group",
-    "Notification",
-    "Course",
-    "Settings",
-    "More",
-  ];
+const Drawer = () => {
+  const options = ["Home", "Sponsorships", "Notification", "Settings", "More"];
   const [selected, setSelected] = useState(options[0]);
   return (
-    <div className="col-span-1 flex flex-col gap-8 pt-5 border-r w-full">
+    <div className="col-span-1 lg:col-span-3 flex flex-col gap-8 pt-5 pr-2 border-r w-full">
       {options.map((option) => (
         <p
           onClick={() => selected !== option && setSelected(option)}
@@ -36,11 +28,11 @@ const MainDrawer = () => {
           </span>
         </p>
       ))}
-      <button className="bg-black text-white py-2 rounded-full font-medium hidden lg:block mr-5">
+      <button className="bg-black text-white py-2 rounded-full w-full font-medium hidden lg:block mr-5">
         Create Campaign
       </button>
     </div>
   );
 };
 
-export default MainDrawer;
+export default Drawer;
