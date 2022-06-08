@@ -16,7 +16,7 @@ const Large = () => {
         />
       </form>
       <div className="flex items-center gap-10">
-        <button className="border-2 border-black font-semibold text-lg rounded-md px-5 h-10">
+        <button className="border-2 border-black font-semibold text-lg rounded-md px-7 h-10">
           Contact
         </button>
         <div
